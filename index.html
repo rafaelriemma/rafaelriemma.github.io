@@ -32,6 +32,8 @@
   .faixa h2 { margin: 0 0 6px; font-size: 20px; }
   .faixa p { margin: 0 0 12px; color: var(--suave); }
   footer { margin-top: 30px; font-size: 13px; color: var(--suave); text-align: center; }
+  footer a { color: var(--marca); }
+  a:focus-visible { outline: 3px solid var(--marca); outline-offset: 3px; }
 </style>
 </head>
 <body>
@@ -73,7 +75,8 @@
     <a class="botao secundario" data-testid="link-afiliado" href="https://app.cakto.com.br/affiliate/invite/da45ac15-0b90-48d5-8472-e461b41c475e">Quero ser afiliado</a>
   </section>
 
-  <footer>© 2026 Prof. Rafael Riemma · Pagamentos processados pela Cakto</footer>
+  <footer data-testid="rodape">© 2026 Prof. Rafael Riemma · Vendedor: Rafael Riemma · Contato: <a href="mailto:rafaelriemma@gmail.com">rafaelriemma@gmail.com</a><br>
+  Pagamentos processados pela Cakto. Os dados completos do vendedor aparecem no checkout e no comprovante da compra.</footer>
 </main>
 </body>
 </html>
