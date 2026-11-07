@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Materiais do Prof. Rafael Riemma</title>
+<meta name="description" content="Materiais prontos para ensinar português: alfabetização de jovens e adultos e, em breve, gramática.">
+<meta property="og:title" content="Materiais do Prof. Rafael Riemma">
+<meta property="og:image" content="img/kit-eja.png">
+<style>
+  :root { --marca: #0f5e6b; --marca-claro: #e6f2f3; --tinta: #1f2937; --suave: #5b6472; --linha: #d6dde3; --fundo: #f7f9fa; --botao: #b8430a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Avenir Next", "Segoe UI", Roboto, Arial, sans-serif; color: var(--tinta); background: var(--fundo); line-height: 1.5; }
+  main { max-width: 960px; margin: 0 auto; padding: 28px 18px 48px; }
+  header .marca { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--marca); font-weight: 700; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 8px; }
+  .sub { color: var(--suave); font-size: 17px; margin: 0 0 26px; }
+  .grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; }
+  .card { background: #fff; border: 1px solid var(--linha); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+  .card img { width: 100%; display: block; background: var(--marca-claro); }
+  .card .corpo { padding: 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .card h2 { font-size: 20px; margin: 0; }
+  .card p { margin: 0; color: var(--suave); }
+  .card .preco { font-weight: 800; font-size: 20px; color: var(--tinta); }
+  .card .acoes { margin-top: auto; display: grid; gap: 8px; padding-top: 8px; }
+  .botao { display: block; text-align: center; text-decoration: none; border-radius: 12px; padding: 14px; font-weight: 700; font-size: 16px; }
+  .botao.principal { background: var(--botao); color: #fff; }
+  .botao.secundario { background: var(--marca-claro); color: var(--marca); }
+  .em-breve { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; aspect-ratio: 6 / 5; background: var(--marca-claro); color: var(--marca); font-weight: 800; font-size: 22px; text-align: center; padding: 20px; }
+  .selo { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em; color: var(--marca); background: var(--marca-claro); border-radius: 99px; padding: 3px 10px; width: max-content; }
+  .faixa { margin-top: 30px; background: #fff; border: 1px solid var(--linha); border-radius: 16px; padding: 18px; }
+  .faixa h2 { margin: 0 0 6px; font-size: 20px; }
+  .faixa p { margin: 0 0 12px; color: var(--suave); }
+  footer { margin-top: 30px; font-size: 13px; color: var(--suave); text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="marca">Prof. Rafael Riemma</div>
+    <h1>Materiais prontos para ensinar português</h1>
+    <p class="sub">Feitos por um professor com mais de 20 anos de sala de aula. Para imprimir, aplicar e ver o aluno avançar.</p>
+  </header>
+
+  <section class="grade" aria-label="Materiais">
+    <article class="card" data-testid="card-eja">
+      <img src="img/kit-eja.png" alt="Kit Alfabetização EJA: 2 livros, 480 páginas">
+      <div class="corpo">
+        <span class="selo">ALFABETIZAÇÃO DE ADULTOS</span>
+        <h2>Kit Alfabetização EJA com a Vida Real</h2>
+        <p>40 aulas prontas com plano e respostas, 120 fichas em 3 níveis e um caderno de treino com 274 páginas, da letra à frase.</p>
+        <div class="preco">R$ 99</div>
+        <div class="acoes">
+          <a class="botao principal" data-testid="ver-eja" href="https://rafaelriemma.github.io/kit-eja/">Conhecer o kit</a>
+          <a class="botao secundario" data-testid="amostra-eja" href="amostra-gratis-alfabetizacao-eja.pdf" download>Baixar amostra grátis (8 páginas)</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-testid="card-gramatica">
+      <div class="em-breve" aria-hidden="true"><span>Gramática Lógica</span><span style="font-size:15px;font-weight:600">em preparação</span></div>
+      <div class="corpo">
+        <span class="selo">GRAMÁTICA</span>
+        <h2>Gramática Lógica</h2>
+        <p>A gramática explicada pela lógica da língua. Ainda em produção.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="faixa" data-testid="afiliados">
+    <h2>Indique e ganhe 30%</h2>
+    <p>Professores e perfis de educação podem divulgar o Kit Alfabetização EJA como afiliados e recebem 30% de cada venda feita pelo seu link. Cada pedido de afiliação é analisado.</p>
+    <a class="botao secundario" data-testid="link-afiliado" href="https://app.cakto.com.br/affiliate/invite/da45ac15-0b90-48d5-8472-e461b41c475e">Quero ser afiliado</a>
+  </section>
+
+  <footer>© 2026 Prof. Rafael Riemma · Pagamentos processados pela Cakto</footer>
+</main>
+</body>
+</html>
